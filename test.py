@@ -198,15 +198,15 @@ def graph_plot(conn, ideal_index):
 	plt.show()
 	
 
-# train_data = read_csv('train.csv')
-# print(train_data)
-# test_data = read_csv('test.csv')
-# ideal_data = read_csv('ideal.csv')
+train_data = read_csv('train.csv')
+print(train_data)
+test_data = read_csv('test.csv')
+ideal_data = read_csv('ideal.csv')
 
-# create_train_table(conn, data)
-# create_test_table(conn, test_data)
-# create_ideal_table(conn, ideal_data)
+create_train_table(conn, data)
+create_test_table(conn, test_data)
+create_ideal_table(conn, ideal_data)
 
 ideals = get_best_ideal(conn)
-# calculate_test(conn, ideals)
+calculate_test(conn, ideals)
 graph_plot(conn, ideals)
